@@ -20,6 +20,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px 10px 40px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 #logoimg{
     width: 60px;
@@ -400,7 +403,7 @@ footer{
     bottom: 80px;
     right: 15px;
     bottom: 0px;
-    width: 300px;
+    width: 350px;
     background-color: #dbdbdb;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
