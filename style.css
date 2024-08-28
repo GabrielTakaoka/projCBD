@@ -25,6 +25,12 @@
     background-color: white;
     border-bottom: solid 1px rgba(110, 110, 110, 0.384);
 }
+#lognit{
+    width: 125px;
+}
+#logtoy{
+    width: 150px;
+}
 #logoimg{
     width: 60px;
     height: 60px;
@@ -215,6 +221,7 @@ footer{
     justify-content: center;
     background-color: rgb(24, 24, 24);
     color: white;
+    text-align: center;
 }
 
 /* --toyota-- */
@@ -326,7 +333,7 @@ footer{
     margin-top: 0;
 }
 .popup p {
-    text-align: justify;
+    text-align: left;
 }
 .popup button {
     background-color: rgb(212, 66, 66);
