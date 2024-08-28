@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niterra</title>
+    <link rel="shortcut icon" href="imagens/cbd-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="imagens/cbd-logo.png" alt="Logo"></a>
+        </div>
+        <nav class="nav">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    </header>
+    <main id="mainToyota">
+        <div class="sidebar">
+            <button id="op1" onclick="showContent('option1')"><img src="imagens/cbd-logo.png" width="60px"></button>
+            <button id="op2" onclick="showContent('option2')"><img src="imagens/logo-iai.png" width="60px"></button>
+        </div>
+        <div class="content">
+            <div id="option1" style="display: none;">
+                <h2>Consulte manuais e instalações realizadas pela CBD:</h2>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/EpnvahPK8mBBiXk46HGF8lwBQdBhSpLvwbnNCQjOAHwNbA?e=bwWja5">12 - 0075 - MODIFICAÇÃO NA TRANSMISSÃO DA SOLDADEIRA LINHA 9 E LINHA 11;</a></ul>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/EkUSZaMjsI5Kp0ykBUWMmq4BKgZl1W7wXKDf1eJW0ayXPQ?e=DkTToh">13 - 0052 - PROTEÇÃO PARA ROSQUEADEIRA HILGELAND;</a></ul>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/Evn9dczXBNJLmmzzT49MSeUBgbBrQBKK2OCboLEOw95dZg?e=Byrvpy">13 - 0072 - DISTRIBUIDOR;</a></ul>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/EqehxOVIUC9Erf035IbWJt8B2Anz3co2UnfQOWDwIJ5JmA?e=T62WbC">17 - 0846 - SISTEMA NR12 ROSQUEADEIRA WAFIOS;</a></ul>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/EkUSZaMjsI5Kp0ykBUWMmq4BKgZl1W7wXKDf1eJW0ayXPQ?e=DkTToh">13 - 0052 - PROTEÇÃO PARA ROSQUEADEIRA HILGELAND;</a></ul>
+            </div>
+            <div id="option2" style="display: none;">
+                <h2>Consulte relatórios de manutenções realizadas</h2>
+                <ul><img class="pst" src="imagens/download.png" alt=""><a href="manuais/ISPA-WXM SN A70384270/RELATÓRIOS/Niterra ISPA-WXM1.docx">ISPA-WXM SN A70384240</a></ul>
+                <ul><img class="pst" src="imagens/download.png" alt=""><a href="manuais/ISPA-WXM SN A80331431/RELATÓRIOS/Niterra_ISPA-WXM (2).docx">ISPA-WXM SN A80331413</a></ul>
+                <ul><img class="pst" src="imagens/download.png" alt=""><a href="manuais/ISPA-WXM SN A80530978/RELATÓRIOS/Niterra ISPAA.docx">ISPA-WXM SN A80530978</a></ul>
+                <ul><img class="pst" src="imagens/download.png" alt=""><a href="manuais/NITERRA IF-SA3L SN 200375829/RELATÓRIOS/Niterra IF-SA3L.docx">IF - SA3L SN 200375829</a></ul>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Atenção!</h2>
+            <p>← Selecione uma das opções ao lado esquerdo para exibir todas as informações</p>
+            <button onclick="togglePopup()">Fechar</button>
+        </div>
+        <!-- Janela de chat -->
+        <div id="chat-icon">
+            <img src="imagens/chat.png" alt="Chat Icon" onclick="toggleChat()">
+        </div>
+        <div id="chat-box">
+            <div id="chat-header">
+                <h3>Suporte</h3>
+                <button onclick="toggleChat()">X</button>
+            </div>
+            <div id="chat-content">
+                <!-- Mensagem inicial do suporte -->
+                <div class="message support-message">
+                    <p>Olá! Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by CBD AUTOMAÇÃO INDUSTRIAL LTDA.</p>
+    </footer>
+</body>

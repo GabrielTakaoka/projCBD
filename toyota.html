@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota</title>
+    <link rel="shortcut icon" href="imagens/cbd-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="imagens/cbd-logo.png" alt="Logo"></a>
+        </div>
+        <nav class="nav">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    </header>
+    <main id="mainToyota">
+        <div class="sidebar">
+            <button id="op1" onclick="showContent('option1')"><img src="imagens/cbd-logo.png" width="60px"></button>
+            <button id="op2" onclick="showContent('option2')"><img src="imagens/logo-iai.png" width="60px"></button>
+        </div>
+        <div class="content">
+            <div id="option1" style="display: none;">
+                <h2>Consulte manuais e instalações realizadas pela CBD:</h2>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/EqvPLQMcycRFhReSRAyxFLgBqSg3gSOMQroS5JrUX6dX5w?e=6LAssI">Sistema de Prensagem do Cubo do Freio</a></ul>
+                <ul><img class="pst" src="imagens/pasta.png" alt=""><a href="https://cbdbr-my.sharepoint.com/:f:/g/personal/g_takaoka_cbd_com_br/EtSE2vlr7r1PtnoEdAYG2qABCNooaOQ2H7bRxKlYCfl8Cg?e=faHFDt">Sistema Transportador de Cabeçote</a></ul>
+            </div>
+            <div id="option2" style="display: none;">
+                <h2>Consulte relatórios de manutenções realizadas</h2>
+                <p>Este é o conteúdo exibido quando a Opção 2 é selecionada.</p>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Atenção!</h2>
+            <p>← Selecione uma das opções ao lado esquerdo para exibir todas as informações</p>
+            <button onclick="togglePopup()">Fechar</button>
+        </div>
+        <!-- Janela de chat -->
+        <div id="chat-icon">
+            <img src="imagens/chat.png" alt="Chat Icon" onclick="toggleChat()">
+        </div>
+        <div id="chat-box">
+            <div id="chat-header">
+                <h3>Suporte</h3>
+                <button onclick="toggleChat()">X</button>
+            </div>
+            <div id="chat-content">
+                <!-- Mensagem inicial do suporte -->
+                <div class="message support-message">
+                    <p>Olá! Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by CBD AUTOMAÇÃO INDUSTRIAL LTDA.</p>
+    </footer>
+</body>

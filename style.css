@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --Configurações globais-- */
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* --Cabeçalho geral-- */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+}
+#logoimg{
+    width: 60px;
+    height: 60px;
+}
+.menu-toggle{
+    display: none;
+    background-color: #497796;
+}
+.menu-toggle:hover{
+    background-color: #315066;;
+    transition: 1s;
+}
+.nav{
+    display: flex;
+    gap: 80px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 15px;
+    border-radius: 30px;
+}
+.nav a:hover{
+    transition: 1s;
+    color: #6494d3;
+    background-color: #e0e0e0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff; /* Fundo branco */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        border: 1px solid #ddd;
+        gap: 0px;
+    }
+    .nav a{
+        display: flex;
+        border-radius: 0px;
+        border: solid 0.1px rgb(233, 233, 233);
+    }
+    .nav.active {
+        display: flex;
+    }
+    .menu-toggle{
+        display: block;
+    }
+}
+
+/* --Área de Login-- */
+
+#login{
+    display: flex;
+}
+#textLogin{
+    color: white;
+}
+#areaDeLogin{
+    padding: 30px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#user{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+#campoUser{
+    display: flex;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+}
+#password{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+#campoPassword{
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+}
+#error{
+    color: red;
+}
+#areaDeLogin>button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: rgb(65, 96, 139);
+    color: white;
+}
+#areaDeLogin>button:hover{
+    background-color: rgb(40, 59, 85);
+    color: white;
+}
+
+
+/* --Cadastro-- */
+
+.cadastro-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#ou{
+    color: white;
+}
+#cad {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #474747;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(65, 96, 139);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(40, 59, 85);
+}
+
+/* --Área 2-- */
+
+#area2{
+    display: flex;
+}
+#wallPaperMain{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --footer-- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+/* --toyota-- */
+
+#mainToyota{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.sidebar {
+    width: 10%;
+    height: 100;
+    justify-content: baseline;
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0px 20px 40px;
+}
+#op1 {
+    background-color: #252525;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 3px 2px rgba(68, 68, 68, 0.925);
+}
+#op2 {
+    background-color: hsl(0, 0%, 100%);
+    color: white;
+    border: none;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin:30px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 3px 2px rgba(49, 49, 49, 0.774);
+}
+#op1:hover {
+    border-left: solid 5px rgb(65, 96, 139);
+    transition: 0.5s;
+}
+#op2:hover {
+    border-left: solid 5px #ca3434;
+    transition: 0.5s;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(207, 204, 204);
+}
+.content h2 {
+    margin-top: 0;
+}
+#option1{
+    background-color: #252525;
+    padding: 60px;
+    color: white;
+    width: 100%;
+}
+#option1>h2{
+    margin-bottom: 40px;
+    font-weight: bolder;
+    border-bottom: solid rgb(65, 96, 139);
+}
+#option2{
+    background-color: hsl(0, 0%, 100%);
+    padding: 60px;
+    color: black;
+    width: 100%;
+}
+#option2>h2{
+    margin-bottom: 40px;
+    font-weight: bolder;
+    border-bottom: solid #ca3434;
+}
+.popup {
+    position: fixed;
+    left: 15%; 
+    top: 40%;
+    transform: translateY(-50%);
+    width: 300px;
+    background-color: rgb(236, 235, 235);
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
+    border-radius: 8px;
+    display: none;
+}
+.popup h2 {
+    margin-top: 0;
+}
+.popup p {
+    text-align: justify;
+}
+.popup button {
+    background-color: rgb(212, 66, 66);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.popup button:hover {
+    background-color: rgb(151, 48, 48);
+}
+#option1>ul>a{
+    text-decoration: none;
+    color: white;
+}
+#option1>ul>a:hover{
+    text-decoration: none;
+    color: rgb(128, 165, 245);
+}
+.pst{
+    width: 25px;
+    height: 25px;
+}
+#option1>ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#option2>ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#option2>ul>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#option2>ul>a:hover{
+    text-decoration: none;
+    color: #ca3434;
+}
+
+/* --niterra-- */
+
+#nitlogo{
+    height: 80px;
+    width: 150px;
+}
+
+/* --chat-- */
+
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: width 1s, height 1s;
+}
+#chat-icon:hover {
+    width: 70px;
+    height: 70px;
+}
+
+#chat-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+#chat-box {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 5px;
+    bottom: 0px;
+    width: 300px;
+    background-color: #dbdbdb;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#chat-header {
+    background-color: #313131;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  10px rgba(0, 0, 0, 0.034);
+}
+
+#chat-header>button {
+    background-color: #ca3434;
+    color: white;
+}
+
+#chat-header>button:hover {
+    background-color: #f84040;
+    color: white;
+    transition: 0.5s;
+}
+
+#chat-content {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-input {
+    padding: 10px;
+    display: flex;
+}
+
+#chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chat-input button {
+    width: 60px;
+    height: 38px;
+    background-color: #313131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#chat-input button:hover{
+    background-color: #5f5f5f;;
+}
+
+/* Estilo para mensagens enviadas pelo usuário */
+.message.user-message {
+    align-self: flex-end;
+    background-color: #c2c2c2;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: small;
+}
+
+/* Estilo para mensagens recebidas do suporte */
+.message.support-message {
+    align-self: flex-start;
+    background-color: #3d5b81;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    color: white;
+    font-size: small;
+}

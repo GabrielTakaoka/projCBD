@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="imagens/cbd-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img id="logoimg" src="imagens/cbd-logo.png" alt="Logo">
+        </div>
+        <nav class="nav">
+            <a href="https://cbd.com.br/">Início</a>
+            <a href="https://cbd.com.br/sobre/">Sobre</a>
+            <a href="https://cbd.com.br/contato/">Contato</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    </header>
+    <main id="login">
+        <div id="areaDeLogin">
+            <div id="textLogin">
+                <h2>Faça o seu Login!</h2>
+            </div>
+            <div id="user">
+                <h4>Usuário:</h4>
+                <input type="text" id="campoUser">
+            </div>
+            <div id="password">
+                <h4>Senha:</h4>
+                <input type="password" id="campoPassword">
+            </div>
+            <div id="error" class="error"></div>
+            <button onclick="login()">Entrar</button>
+            <h4 id="ou">OU</h4>
+            <div class="cadastro-container">
+                <h4 id="cad">Cadastre-se:</h4>
+                <form id="cadastroForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="nome">Celular:</label>
+                    <input type="text" id="cel" name="cel" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+        
+                    <button type="button" onclick="enviarSolicitacao()">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+        <div id="area2">
+            <img id="wallPaperMain" src="imagens/automated-robotic-systems-enhance-manufacturing-smart-warehouses.jpg">
+        </div>
+        <!-- Janela de chat -->
+        <div id="chat-icon">
+            <img src="imagens/chat.png" alt="Chat Icon" onclick="toggleChat()">
+        </div>
+        <div id="chat-box">
+            <div id="chat-header">
+                <h3>Suporte</h3>
+                <button onclick="toggleChat()">X</button>
+            </div>
+            <div id="chat-content">
+                <!-- Mensagem inicial do suporte -->
+                <div class="message support-message">
+                    <p>Olá! Como posso ajudar você hoje?</p>
+                </div>
+            </div>
+            <div id="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by CBD AUTOMAÇÃO INDUSTRIAL LTDA.</p>
+    </footer>
+</body>
+</html>
