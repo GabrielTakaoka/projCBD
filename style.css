@@ -298,6 +298,11 @@ footer{
     font-weight: bolder;
     border-bottom: solid #ca3434;
 }
+@media only screen and (max-width: 768px) {
+    #popup{
+        display: none;
+    }
+}
 .popup {
     position: fixed;
     left: 15%; 
@@ -445,7 +450,6 @@ footer{
 }
 
 #chat-input button {
-    width: 30%;
     height: 38px;
     background-color: #313131;
     color: white;
