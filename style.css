@@ -305,6 +305,12 @@ footer{
     #popup{
         display: none;
     }
+    #option1{
+        font-size: small;
+    }
+    #option2{
+        font-size: small;
+    }
 }
 .popup {
     position: fixed;
