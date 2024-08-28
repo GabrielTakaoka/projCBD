@@ -23,6 +23,7 @@
     position: sticky;
     top: 0;
     background-color: white;
+    border-bottom: solid 1px rgba(110, 110, 110, 0.384);
 }
 #logoimg{
     width: 60px;
@@ -348,20 +349,22 @@ footer{
     color: rgb(128, 165, 245);
 }
 .pst{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 #option1>ul{
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
 #option2>ul{
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
 #option2>ul>a{
     text-decoration: none;
