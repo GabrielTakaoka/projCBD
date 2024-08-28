@@ -447,9 +447,11 @@ footer{
 #chat-input input {
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
 #chat-input button {
+    height: 40px;
     background-color: #313131;
     color: white;
     border: none;
