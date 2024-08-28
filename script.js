@@ -133,22 +133,3 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('active');
     });
 });
-
-function formatarCelular(event) {
-    let input = event.target;
-    let valor = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
-
-    if (valor.length > 11) {
-        valor = valor.slice(0, 11);
-    }
-
-    if (valor.length > 6) {
-        valor = valor.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-    } else if (valor.length > 2) {
-        valor = valor.replace(/(\d{2})(\d{0,5})/, '($1) $2');
-    } else {
-        valor = valor.replace(/(\d{0,2})/, '($1');
-    }
-
-    input.value = valor;
-}
