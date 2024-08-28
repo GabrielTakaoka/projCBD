@@ -441,6 +441,7 @@ footer{
     padding: 10px;
     display: flex;
     justify-content: center;
+    gap: 5px;
 }
 
 #chat-input input {
@@ -455,7 +456,6 @@ footer{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 5px;
 }
 
 #chat-input button:hover{
