@@ -302,9 +302,6 @@ footer{
     border-bottom: solid #ca3434;
 }
 @media only screen and (max-width: 768px) {
-    #popup{
-        display: none;
-    }
     #option1{
         font-size: small;
     }
