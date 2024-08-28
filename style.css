@@ -80,15 +80,26 @@
 #login{
     display: flex;
 }
+@media only screen and (max-width: 768px) {
+    #areaDeLogin{
+        width: 100vw;
+    }
+    #area2{
+        width: 0px;
+    }
+    footer{
+        width: 100vw;
+    }
+}
 #textLogin{
     color: white;
 }
 #areaDeLogin{
-    padding: 30px;
+    padding: 20px;
     background-color: rgb(39, 39, 39);
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: center;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -103,7 +114,7 @@
     display: flex;
     border-radius: 20px;
     padding: 10px;
-    width: 100%;
+    width: 250px;
 }
 #password{
     display: flex;
@@ -114,7 +125,7 @@
 #campoPassword{
     border-radius: 20px;
     padding: 10px;
-    width: 100%;
+    width: 250px;
 }
 #error{
     color: red;
@@ -135,10 +146,11 @@
 /* --Cadastro-- */
 
 .cadastro-container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e00e;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
 }
 #ou{
     color: white;
@@ -194,9 +206,8 @@ button:hover {
 
 footer{
     display: flex;
-    flex-direction: row;
-    padding: 25px;
-    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     justify-content: center;
     background-color: rgb(24, 24, 24);
     color: white;
