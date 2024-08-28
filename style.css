@@ -437,10 +437,10 @@ footer{
 #chat-input {
     padding: 10px;
     display: flex;
+    justify-content: center;
 }
 
 #chat-input input {
-    flex: 1;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
