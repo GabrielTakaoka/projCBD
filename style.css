@@ -206,8 +206,8 @@ button:hover {
 
 footer{
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     justify-content: center;
     background-color: rgb(24, 24, 24);
     color: white;
@@ -221,8 +221,6 @@ footer{
     height: 100vh;
 }
 .sidebar {
-    width: 10%;
-    height: 100;
     justify-content: baseline;
     background-color: #4d4d4d;
     color: white;
@@ -447,7 +445,7 @@ footer{
 }
 
 #chat-input button {
-    width: 60px;
+    width: 30%;
     height: 38px;
     background-color: #313131;
     color: white;
